@@ -5,3 +5,10 @@ img {
     width: 100px;
     height: 100px;
 }
+.bgi {
+    width: 300px;
+    height: 100px;
+
+    background: #ccc url('./images/4.jpg') center center no-repeat;
+    background-size: contain;
+}
