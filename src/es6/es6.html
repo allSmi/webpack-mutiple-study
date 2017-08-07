@@ -9,11 +9,21 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="/lib/prettify/prettify.css">
+    <script src="/lib/prettify/prettify.js"></script>
 </head>
-
 <body>
-    <!-- html模板 -->
-    <!-- 这是模版文件，实际并没有用到，只是方便新建页面，因为这是每个页面共同的 -->
+    <div class="title">es6-Study</div>
+    <a href="/">去index页</a>
+    <a href="/list/list.html">去list页</a>
+    <pre>
+var a = [];
+for (var i = 0; i < 10; i++) {
+  a[i] = function () {
+    console.log(i);
+  };
+}
+a[6](); // 10</pre>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 </body>
 

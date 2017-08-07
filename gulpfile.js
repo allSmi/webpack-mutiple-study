@@ -4,12 +4,12 @@ var exec = require('child_process').exec;
 
 // 清理构建目录
 gulp.task('clean', function(callback) {
-    del(['dist']);
-    callback();
+    // del(['dist']);
+    // callback();
 
     // Return the Promise from del()
     // 'return' This is the key here, to make sure asynchronous tasks are done!
-    // return del('dist/**/*');
+    return del('dist');
 });
 
 // 生成编译后的文件

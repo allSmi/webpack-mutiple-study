@@ -34,7 +34,7 @@ var plugins = [
 
 // 自动生成entryJs和HtmlWebpackPlugin配置---begin----
 var entryJs = {
-    'vendor': ['lodash', 'moment'],
+    'vendor': ['babel-polyfill', 'lodash', 'moment'],
     'core/core': './src/core/core.js'
 };
 var getFiles = function(filepath) {
@@ -52,7 +52,7 @@ Object.keys(pages).forEach(function(pageName) {
     if (pageName == 'index') {
         plugins.push(
             new HtmlWebpackPlugin({
-                template: './src/' + pageName + '/' + pageName + '.html',
+                template: './src/' + pageName + '/' + pageName + '.html', // 以自身为模版生成html
                 filename: './' + pageName + '.html',
                 chunks: ['core/core', 'vendor', 'mainfest', pageName + '/' + pageName],
             })
@@ -104,7 +104,24 @@ module.exports = {
             use: [
                 'file-loader'
             ]
+        }, {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['es2015']
+                }
+            }
         }]
+    },
+    resolve: {
+        modules: [path.resolve(__dirname, 'lib'), 'node_modules'],
+        extensions: ['.js'],
+        alias: {
+            'prettify$': 'prettify/prettify.js', // pre标签代码美化,没有使用这种引用方法，暂时保留
+            'prettify-css$': 'prettify/prettify.css'
+        }
     },
     externals: {
         'jquery': 'window.jQuery'
