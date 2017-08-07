@@ -84,36 +84,38 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.css$/,
-            use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: 'css-loader'
-            })
-        }, {
-            test: /\.(png|svg|jpg|gif)$/,
-            use: [
-                'file-loader'
-            ]
-        }, {
-            test: /\.html$/,
-            use: [
-                'html-loader'
-            ]
-        }, {
-            test: /\.(woff|woff2|eot|ttf|otf)$/,
-            use: [
-                'file-loader'
-            ]
-        }, {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: ['es2015']
-                }
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
+            }, {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            }, {
+                test: /\.html$/,
+                use: [
+                    'html-loader'
+                ]
+            }, {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
+                ]
             }
-        }]
+            // , {
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     use: {
+            //         loader: 'babel-loader',
+            //         options: {
+            //             presets: ['es2015']
+            //         }
+            //     }
+            // }
+        ]
     },
     resolve: {
         modules: [path.resolve(__dirname, 'lib'), 'node_modules'],

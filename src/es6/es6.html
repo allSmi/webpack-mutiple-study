@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/lib/prettify/prettify.css">
     <script src="/lib/prettify/prettify.js"></script>
 </head>
+
 <body>
     <div class="title">es6-Study</div>
     <a href="/">去index页</a>
@@ -24,6 +25,24 @@ for (var i = 0; i < 10; i++) {
   };
 }
 a[6](); // 10</pre>
+    <pre>
+var a = [];
+for (var i = 0; i < 10; i++) {
+    a[i] = (function(i) {
+        return function() {
+            console.log(i);
+        }
+    })(i);
+}
+a[6](); // 6</pre>
+    <pre>
+var a = [];
+for (let i = 0; i < 10; i++) {
+    a[i] = function() {
+        console.log(i);
+    };
+}
+a[6](); // 6</pre>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 </body>
 
