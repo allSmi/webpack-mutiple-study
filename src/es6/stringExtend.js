@@ -128,7 +128,24 @@ function stringExtend() {
     // a(6); // Unexpected token (  报错,eval中写函数1不用引号，2用引号还要用()包上
 
     // 标签模版
-    alert `123`;
+    // alert `123`;
+
+    // console.log `\\123`;
+    // console.log `12\n2`;
+
+    // let a = 1;
+    // tag `First line\nSecond${a} line`;
+
+    // function tag(strings) {
+    //     console.log(strings.raw);
+    //     // "First line\nSecond line"
+    // }
+
+    // console.log(String.raw `hi\u000A`);
+    // console.log('\u000A');
+
+    // console.log(String.raw({ raw: 'test' }, 0, 1, 2));
+
 
 }
 

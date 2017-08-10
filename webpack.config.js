@@ -83,6 +83,7 @@ module.exports = {
         port: 9000
     },
     module: {
+        noParse: /lodash/,
         rules: [{
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
