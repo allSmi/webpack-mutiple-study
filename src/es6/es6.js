@@ -1,14 +1,20 @@
 import './es6.css';
 
 // es6 学习
-import { letConst } from './let&const'; // let&const
+import { letConst } from './section/let&const'; // let&const
 letConst();
 
-import { destructuring } from './destructuring'; // destructuring
+import { destructuring } from './section/destructuring'; // destructuring
 destructuring();
 
-import { stringExtend } from './stringExtend'; // stringExtend
+import { stringExtend } from './section/stringExtend'; // stringExtend
 stringExtend();
+
+import { regExp } from './section/regExp'; // regExp
+regExp();
+
+import { arrayExtend } from './section/arrayExtend'; // arrayExtend
+arrayExtend();
 
 // import 'prettify';
 // import 'prettify-css'; 在webpack中alias，会被打包到es6.js中，另一种方法是直接在html中引入外部的js和css
