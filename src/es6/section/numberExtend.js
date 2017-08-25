@@ -1,5 +1,5 @@
-function arrayExtend() {
-    console.log('arrayExtend');
+function numberExtend() {
+    console.log('numberExtend');
 
     // console.log(0b11111111); // 二进制
     // console.log(0o11111111); // 八进制
@@ -52,4 +52,4 @@ function arrayExtend() {
 
 }
 
-export { arrayExtend };
+export { numberExtend };

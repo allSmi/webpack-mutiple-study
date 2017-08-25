@@ -13,8 +13,11 @@ stringExtend();
 import { regExp } from './section/regExp'; // regExp
 regExp();
 
-import { arrayExtend } from './section/arrayExtend'; // arrayExtend
-arrayExtend();
+import { numberExtend } from './section/numberExtend'; // arrayExtend
+numberExtend();
+
+import { functionExtend } from './section/functionExtend'; // functionExtend
+functionExtend();
 
 // import 'prettify';
 // import 'prettify-css'; 在webpack中alias，会被打包到es6.js中，另一种方法是直接在html中引入外部的js和css
