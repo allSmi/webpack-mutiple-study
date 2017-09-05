@@ -14,13 +14,28 @@ function setMap() {
     // console.log([1, 2] instanceof Array);
     // console.log([1, 2] instanceof Object);
 
-    let map = new Map([
-        ['name', '张三'],
-        ['title', 'Author']
-    ]);
-    console.log(map.get('name'));
+    // let map = new Map([
+    //     ['name', '张三'],
+    //     ['title', 'Author']
+    // ]);
+    // console.log(map.get('name'));
 
-    console.log(undefined === undefined);
+    // console.log(undefined === undefined);
+
+    let a = { 'a': 1 };
+    let c = { 'b': 11 };
+    let b = new WeakMap();
+    b.set(a, c);
+    console.log(b.get(a));
+    c = null;
+    console.log(b.get(a));
+    c = { 'b': 22 };
+    console.log(b.get(a));
+    a = null;
+    console.log(b.get(a));
+
+
+
 
 
 
