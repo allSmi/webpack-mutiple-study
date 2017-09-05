@@ -31,6 +31,9 @@ symbol();
 import { setMap } from './section/set&map'; // set&map
 setMap();
 
+import { proxy } from './section/proxy'; // proxy
+proxy();
+
 // import 'prettify';
 // import 'prettify-css'; 在webpack中alias，会被打包到es6.js中，另一种方法是直接在html中引入外部的js和css
 // 代码美化
