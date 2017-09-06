@@ -22,17 +22,17 @@ function setMap() {
 
     // console.log(undefined === undefined);
 
-    let a = { 'a': 1 };
-    let c = { 'b': 11 };
-    let b = new WeakMap();
-    b.set(a, c);
-    console.log(b.get(a));
-    c = null;
-    console.log(b.get(a));
-    c = { 'b': 22 };
-    console.log(b.get(a));
-    a = null;
-    console.log(b.get(a));
+    // let a = { 'a': 1 };
+    // let c = { 'b': 11 };
+    // let b = new WeakMap();
+    // b.set(a, c);
+    // console.log(b.get(a));
+    // c = null;
+    // console.log(b.get(a));
+    // c = { 'b': 22 };
+    // console.log(b.get(a));
+    // a = null;
+    // console.log(b.get(a));
 
 
 
