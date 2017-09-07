@@ -15,6 +15,7 @@ function proxy() {
     // });
     // console.log(proxy.time);
 
+    // console.log(Reflect.apply(1, 2));//?????
 
 
 
