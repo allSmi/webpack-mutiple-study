@@ -8,8 +8,8 @@ function proxy() {
     // console.log(b);
 
     let proxy = new Proxy({}, {
-        get: function(target, property) {
-            console.log(target, property);
+        get: function(target, property, receiver) {
+            console.log(target, property, receiver);
             return 35;
         }
     });
