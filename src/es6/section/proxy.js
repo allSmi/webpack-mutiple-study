@@ -7,13 +7,16 @@ function proxy() {
     // let b = Object.create({});
     // console.log(b);
 
-    let proxy = new Proxy({}, {
-        get: function(target, property, receiver) {
-            console.log(target, property, receiver);
-            return 35;
-        }
-    });
-    console.log(proxy.time);
+    // let proxy = new Proxy({}, {
+    //     get: function(target, property) {
+    //         console.log(target, property);
+    //         return 35;
+    //     }
+    // });
+    // console.log(proxy.time);
+
+    // console.log(Reflect.apply(1, 2));//?????
+
 
 
 
