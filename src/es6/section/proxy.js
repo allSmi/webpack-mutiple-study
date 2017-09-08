@@ -16,9 +16,9 @@ function proxy() {
     // console.log(proxy.time);
 
     // console.log(Reflect.apply(1, 2));//?????
-    console.log('11');
 
-
+    // has对for---in 没有拦截的作用
+    // construct方法返回的必须是一个对象，否则会报错
 
 
 }
