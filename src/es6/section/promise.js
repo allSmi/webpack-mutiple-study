@@ -73,25 +73,39 @@ function promise() {
     //     console.error('出错了', error);
     // });
 
-    var p1 = new Promise(function(resolve, reject) {
-        // setTimeout(function() {
-        //     resolve();
-        // }, 3000);
-        reject();
-    });
+    // var p1 = new Promise(function(resolve, reject) {
+    //     // setTimeout(function() {
+    //     //     resolve();
+    //     // }, 3000);
+    //     reject();
+    // });
 
-    var p2 = new Promise(function(resolve, reject) {
-        resolve(p1); // 如果p1的状态是pending，那么p2的回调函数就会等待p1的状态改变；如果p1的状态已经是resolved或者rejected，那么p2的回调函数将会立刻执行。
-    });
+    // var p2 = new Promise(function(resolve, reject) {
+    //     resolve(p1); // 如果p1的状态是pending，那么p2的回调函数就会等待p1的状态改变；如果p1的状态已经是resolved或者rejected，那么p2的回调函数将会立刻执行。
+    // });
 
-    p2.then(function() {
-        console.log('success');
-    }).then(function(data) {
-        console.log('2');
-        console.log(data); // 1111
-    }).catch(function(error) {
-        console.log('发生错误：', error);
-    });
+    // p2.then(function() {
+    //     console.log('success');
+    // }, function() {
+    //     console.log('fail');
+    //     return 1111;
+    // }).then(function(data) {
+    //     console.log('2');
+    //     console.log(data); // 1111
+    // }).catch(function(error) {
+    //     console.log('发生错误：', error);
+    // });
+
+    // p2.then(function() {
+    //     console.log('success');
+    // }).then(function(data) {
+    //     console.log('2');
+    //     console.log(data); // 1111
+    // }).catch(function(error) {
+    //     console.log('发生错误：', error);
+    // });
+
+
 
 }
 export { promise };
