@@ -40,6 +40,8 @@ reflect();
 import { promise } from './section/promise'; // promise
 promise();
 
+import { iterator } from './section/iterator'; // iterator & for...of
+iterator();
 
 
 // import 'prettify';
