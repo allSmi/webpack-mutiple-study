@@ -1,3 +1,6 @@
 .title {
     font-size: 20px;
 }
+pre{
+    display: none;
+}

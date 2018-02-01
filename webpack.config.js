@@ -107,6 +107,7 @@ module.exports = {
                 ]
             }
             // , {
+            // // 开启babel
             //     test: /\.js$/,
             //     exclude: /node_modules/,
             //     use: {
