@@ -1,6 +1,10 @@
+/* * {
+    touch-action: none;
+    pointer-events: none;
+} */
 .title {
     font-size: 20px;
 }
-pre{
+pre {
     display: none;
 }
