@@ -80,5 +80,44 @@ function classStudy() {
     // }
     // Foo.bar() // hello
 
+    // class Counter{
+    //     constructor(){
+    //         console.log(new.target === Counter);
+
+    //     }
+    // }
+    // let counter = new Counter();
+
+    // class Counter{
+    //     constructor(){
+    //         console.log(new.target === Counter); //false 子类继承父类new.target指向子类
+    //         console.log(new.target === ExtendCounter); // true
+    //         if(new.target === Counter){
+    //             throw new Error('本例不能实例化')
+    //         }
+    //     }
+    // }
+    // class ExtendCounter extends Counter{
+    //     constructor(){
+    //         super();
+    //     }
+    // }
+    // let counter = new ExtendCounter();
+    // let counter1 = new Counter();
+
+    // class Counter{
+    //     constructor(){
+
+    //     }
+    // }
+    // class ExtendCounter extends Counter{
+    //     constructor(){
+    //         super() //子类必须在constructor方法中调用super方法，否则新建实例时会报错。
+    //     }
+    // }
+    // let counter = new ExtendCounter()
+    // console.log(Object.getPrototypeOf(ExtendCounter) === Counter);
+
+
 }
 export default classStudy;
