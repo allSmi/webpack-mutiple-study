@@ -39,24 +39,24 @@ import asyncStudy from './section/async';
 // 代码美化
 $(window).load(function() {
 
-    $('pre').addClass('prettyprint linenums');
-    window.prettyPrint();
-    $('pre').show();
+  $('pre').addClass('prettyprint linenums');
+  window.prettyPrint();
+  $('pre').show();
 
-    letConst();
-    destructuring();
-    stringExtend();
-    regExp();
-    numberExtend();
-    functionExtend();
-    arrayExtend();
-    objectExtend();
-    symbol();
-    setMap();
-    proxy();
-    reflectAlias();
-    promise();
-    iterator();
-    classStudy();
-    asyncStudy();
+  letConst();
+  destructuring();
+  stringExtend();
+  regExp();
+  numberExtend();
+  functionExtend();
+  arrayExtend();
+  objectExtend();
+  symbol();
+  setMap();
+  proxy();
+  reflectAlias();
+  promise();
+  iterator();
+  classStudy();
+  asyncStudy();
 });
