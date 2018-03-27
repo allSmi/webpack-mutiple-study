@@ -1,3 +1,6 @@
-div{
-    color:crimson;
+
+/* 放上面和下面都会先引入进来，被覆盖 */
+@import './index0.css';
+div {
+    color: crimson;
 }

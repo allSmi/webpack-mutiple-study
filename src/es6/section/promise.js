@@ -159,6 +159,52 @@ function promise() {
     // f.then(() => {}, (reason) => {
     //     console.log(reason);
     // })
+
+    let promise = new Promise((resolve, reject) => {
+        // throw new Error('333') // promise状态变为reject
+        resolve()
+        throw new Error('222') // resolve后不会捕获错误
+    })
+
+    // promise.then(() => {
+    //     console.log('resolve');
+    //     throw new Error('111') // 下面的两行代码不会执行
+    //     // console.log('222');
+    //     // setTimeout(function() { throw new Error('setTimeout') }, 0) // 在下一轮事件抛出错误，到那个时候，promise的运行已经结束了,不会被catch捕获
+    // }).catch((err) => {
+    //     console.log(err);
+    // }).then(() => {
+    //     console.log('finally-resolve')
+    // }, () => {
+    //     console.log('finally-reject')
+    // }).finally(() => {
+    //     console.log('finally');
+    // })
+    // console.log('11');
+
+    // promise.then(() => {
+    //     throw new Error('111')
+
+    // }).then(() => {
+    //     console.log('resolve');
+
+    // }).catch((err) => {
+    //     console.log(err);
+    //     x + 1
+    //     return 1;
+    // }).then((data) => {
+    //     console.log(data);
+
+    //     console.log('end');
+    // }).catch((err) => {
+    //     console.log(err);
+
+    // }).then((data) => {
+    //     console.log(data);
+
+    //     console.log('end');
+    // })
+
 }
 // export { promise };
 export default promise;
